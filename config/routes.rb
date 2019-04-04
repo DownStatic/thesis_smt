@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :appointments, only: [:show, :index, :destroy, :create]
   resources :schedules, only: [:show, :index, :destroy, :create] do
     resources :appointments, only: [:show, :index, :destroy, :create]
   end
